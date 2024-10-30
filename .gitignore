@@ -1,0 +1,4 @@
+.vs
+.vscode
+.devcontainer
+CppProperties.json
