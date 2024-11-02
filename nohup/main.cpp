@@ -27,6 +27,9 @@ void nohup(const char* path, char ** args )
         exit(1);
     }
 
+    //freopen("out.txt","w",stdout);
+    //freopen("err.txt","w",stderr);
+/*
     int dev_null = open("/dev/null", O_RDWR);
     
     dup2(dev_null, STDIN_FILENO);
@@ -34,8 +37,8 @@ void nohup(const char* path, char ** args )
     dup2(dev_null, STDERR_FILENO);
 
     close(dev_null);
-
-    execvp(path, args);
+*/
+    execv(path, args);
 }
 
 int main(int argc, char** argv) 
