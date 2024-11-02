@@ -38,7 +38,7 @@ void nohup(const char* path, char ** args )
 
     close(dev_null);
 */
-    execv(path, args);
+    execvp(path, args);
 }
 
 int main(int argc, char** argv) 
