@@ -27,8 +27,8 @@ void nohup(const char* path, char ** args )
         exit(1);
     }
 
-    //freopen("out.txt","w",stdout);
-    //freopen("err.txt","w",stderr);
+    freopen("out.txt","w",stdout);
+    freopen("err.txt","w",stderr);
 /*
     int dev_null = open("/dev/null", O_RDWR);
     
